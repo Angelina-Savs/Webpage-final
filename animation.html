@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+    * {margin: 0; padding: 0;}
+	@font-face {
+		font-family: Raleway;
+		src: url('Raleway.ttf');
+	}
+	@font-face {
+		font-family: Tourner;
+		src: url("Tourner.ttf");
+	}
+	@font-face {
+		font-family: Bebasneue;
+		src: url("Bebasneue.ttf");
+	}
+	@keyframes launchRocket {
+        0% {opacity: 1; left: 6px; top: 928px;}
+        50% {left: 6px;}
+        100% {opacity: 1; left: 600px; top: -350px; transform: rotateZ(30deg);}
+	}
+	@keyframes twinkle {
+        0% {opacity: 0.2;}
+        50% {opacity: 1;}
+        100% {opacity: 0.2;}
+	}
+	body {
+		background: whitesmoke;
+	}
+	#page {
+	    width: 928px;
+	    height: 1228px;
+	    background-image: 
+	        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+	        url("bganimation.jpg");
+	    background-size: cover;
+	    background-position: center;
+	    box-shadow: 2px 3px 6px darkgray;
+	    margin: 24px auto 48px;
+	}
+	header {
+        width: 100%;
+        height: 250px;
+    }
+	h1 {
+        font: 43pt/1.4em Tourner;
+        text-align: center;
+	  	color: white;
+		padding-top: 50px;
+	    display: block;
+		text-shadow: 1px 1px 15px blue;
+    }
+	h2 {
+     	font: 14pt/1.4em Raleway;
+        text-align: center;
+	  	color: white;
+	  	margin-top: 13px;
+    }
+	#bigstar {
+        width: 120px;
+        position: relative;
+        left: 700px;
+        top: -50px;
+	    animation: twinkle 4s ease-in-out infinite;
+    }
+	#littlestar {
+        width: 50px;
+        position: relative;
+        left: 700px;
+        top: -50px;
+    	animation: twinkle 2s ease-in-out infinite;
+    }
+	#rocket {
+        position: relative;
+        top: 928px;
+        left: 6px;
+        width: 70px;
+        animation: launchRocket 6s ease-in forwards paused;
+        z-index: 999;
+    }
+	#neptune1 {
+        width: 835px;
+        height: 400px;
+        margin: 0 auto;
+    }
+	.neptune1 {
+        width: 490px;
+		float: left;
+		margin-right: 25px;
+		box-shadow: 2px 3px 80px midnightblue;
+    }
+	#neptune2 {
+        width: 835px;
+        height: 514px;
+        margin: 0 auto;
+    }
+	.neptune2 {
+  		width: 500px;           
+  		float: right;
+        margin: 0 0 25px 25px;
+        box-shadow: 2px 3px 80px midnightblue;
+    }
+	p {
+		font: 14pt/1.4em Raleway;
+		margin: 25px auto;
+		color: white;
+		text-shadow: 1px 1px 20px black;
+	}
+	h3 {
+		font: 35pt/1.0em Bebasneue;
+		color: white;
+		text-shadow: 1px 1px 10px dodgerblue;
+    }
+	#quote {
+        font: 23.7pt/1.5em Bebasneue;
+        color: white;
+        text-shadow: 1px 1px 15px navy;
+        margin: 2px;
+        padding: 36px 0 0 0;
+        text-shadow: 1px 1px 20px dodgerblue;
+    }
+	#quote #span1 {
+        float: left;
+        font-size: 36pt;
+        line-height: 0.8em;
+        padding-right: 10px;
+        color: dodgerblue;
+        font-family: Tourner;
+    }
+	#quote #span2 {
+        font: 13pt/1.0em Raleway;
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+    }#page {
+  position: relative;
+}#page {
+  position: relative;
+}
+
+#button1 {
+ font-family: 'raleway', sans-serif;
+  font-size: 12pt;
+  color: white;
+  background: linear-gradient(midnightblue, royalblue);
+  border: 1px solid dodgerblue;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px dodgerblue;
+  box-shadow: 0 0 10px midnightblue;
+  transition: all 0.3s ease;
+
+  position: absolute;
+  top: 1130px;   
+  left: 30px;  
+  z-index: 10;
+}
+
+#button1:hover {
+  background: linear-gradient(royalblue, midnightblue);
+  color: lightcyan;
+  box-shadow: 0 0 18px dodgerblue;
+  transform: scale(1.05);
+}
+
+#button2 {
+ font-family: 'raleway', sans-serif;
+  font-size: 12pt;
+  color: white;
+  background: linear-gradient(midnightblue, royalblue);
+  border: 1px solid dodgerblue;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px dodgerblue;
+  box-shadow: 0 0 10px midnightblue;
+  transition: all 0.3s ease;
+
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#button2:hover {
+  background: linear-gradient(lightblue, teal);
+  color: navy;
+  box-shadow: 0 0 18px dodgerblue;
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <h1>The Distant Blue Giant</h1>
+            <h2>A Mysterious World of Ice, Wind, and Wonder</h2>
+            <img id="bigstar" src="star.png" />
+            <img id="littlestar" src="star.png" />
+            <img id="rocket" src="rocket.png" alt="Rocket Launching">
+        </header>
+        <div id="neptune1">
+            <img class="neptune1" src="neptune.jpg"/>
+            <h3>Neptune</h3>
+            <p><strong>Rediscover Wonder:</strong> Neptune, the farthest planet from the Sun, is a swirling sphere of deep blue mystery. Its icy winds and distant orbit remind us how vast the outer solar system truly is.</p>
+            <p><strong>Unplug and Unwind:</strong> No noise, no distractions—just the quiet majesty of a planet 2.8 billion miles away.</p>        
+        </div>
+        <div id="neptune2">
+            <img class="neptune2" src="neptune2.jpg" alt="Neptune">
+            <p><strong>Learn and Explore:</strong> From its supersonic storms to its moon Triton’s retrograde orbit, Neptune offers endless opportunities for discovery and awe. It’s a gateway to planetary science and cosmic curiosity.</p>
+            <p id="quote"><span id="span1">“</span>Somewhere, something incredible is waiting to be known.<span id="span2">— Carl Sagan</span></p>
+
+            <!-- Two buttons -->
+            <button id="button1" onClick="document.getElementById('rocket').style.animationPlayState='running';">
+                Launch Rocket
+            </button>
+
+            <button id="button2" onClick="window.location.href='index.html';">
+                Go Back to About Page
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>contact form</title>
+<style>
+    @font-face {
+		font-family: raleway;
+		src: url('Raleway.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: bebasneue;
+		src: url('bebasneue.ttf') format('truetype');
+	} * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: white;
+    } #page {
+        width: 928px;
+        height: auto;
+        background: radial-gradient(black, midnightblue, black);
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    } main {
+        width: 80%;
+        height: auto;
+        margin: 36px auto;
+    } header h1 {
+        font: 60pt/1.4em bebasneue;
+        text-align: center;
+		padding-top: 20px;
+		color: white;
+        margin-top: 24px;
+        text-shadow: 0px 0px 15px blue;
+    }  h2 {
+        font: 20pt/1.4em raleway;
+        text-align: center;
+		color: white;
+        margin-top: 5px;
+        text-shadow: 0px 0px 15px blue;
+    } header p {
+        font: 14pt/1.4em bebasneue;
+        width: 65ch;
+		color: white;
+        margin: 24px auto;
+    } form {
+        width: 600px;
+        margin: 0 auto;
+		border-radius: 15px;
+		box-shadow: 0px 0px 40px #3D85FF;
+        padding: 24px;
+		color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font: 14pt/1.4em raleway;
+    } #personal input {
+        width: 100%;
+        height: 35px;
+    } #personal textarea {
+        width: 100%;
+    } label {
+        margin-top: 12px;
+    } select, input[type="submit"] {
+        font: 12pt/1.4em raleway;
+    } input[type="submit"] {
+        width: 200px;
+        height: 40px;
+        margin: 24px auto;
+        background: #6086F9;
+		font: 14pt/1.4em raleway;
+        border-radius: 6px;
+    } input[type="submit"]:hover {
+        opacity: 0.55;
+		color: midnightblue;
+    } fieldset {
+        margin: 8px 0 8px 0;
+        padding: 12px;
+ 		border: 2px solid #609BFF;
+ 		border-radius: 10px;
+ 		padding: 16px;
+  		box-shadow: 0 0 8px #2575fc;
+    } footer {
+        width: 80%;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto 48px auto;
+    } footer p {
+        font: 14pt/1.4em raleway;
+		color: white;
+		padding-top: 13px;
+		text-align: center;
+    } footer h2 {
+        font: 14pt/1.4em raleway;
+        text-align: center;
+    } #page {
+  position: relative; 
+} button {
+  font-family: 'raleway', sans-serif;
+  font-size: 12pt;
+  color: white;
+  background: linear-gradient(midnightblue, royalblue);
+  border: 1px solid dodgerblue;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px dodgerblue;
+  box-shadow: 0 0 10px midnightblue;
+  transition: all 0.3s ease;
+
+  position: absolute;  
+  top: 23px;           
+  left: 20px;        
+  z-index: 10;          
+}
+
+button:hover {
+  background: linear-gradient(royalblue, midnightblue);
+  color: lightcyan;
+  box-shadow: 0 0 18px dodgerblue;
+  transform: scale(1.05);
+}
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+  const checkboxes = document.getElementsByName('system');
+  for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = source.checked;
+  }
+</script>
+</head>
+
+<body>
+    <div id="page">
+<button onclick="window.location.href='index.html';">
+ Go Back to About Page
+</button>
+        <header>
+            <h1>Contact</h1>
+			<h2>For questions, commissions, and more!</h2>
+        </header>
+        <main>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="8c4128e0-2fb6-4fea-9e01-357950096a82">
+
+        <div id="personal">        
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Subject</label>
+            <input type="text" name="title" required>
+            <label>Message</label>
+            <textarea name="message" rows="6" cols="72" required></textarea>
+        </div>        
+        <fieldset>
+            <label>Reason for contacting Angelina Savaiano (check only one):</label>
+            <br/>
+            <input type="radio" id="Graphic Design Service" name="reason" value="Graphic Design Service">
+            <label for="html">Graphic design services</label>
+            <br/>
+            <input type="radio" id="Art Commission Service" name="reason" value="Art Commission Service">
+            <label for="css">Art commissions (traditionally and digitally)&nbsp;</label>
+            <br/>
+			<input type="radio" id="Animation Service" name="reason" value="Animation Service">
+            <label for="css">Animation services&nbsp;</label>
+            <br/>
+            <input type="radio" id="Video Editing Service" name="reason" value="Video Editing Service">
+            <label for="interface">Video editing services
+            </label>
+            <br/>
+            <input type="radio" id="Other" name="reason" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+       <fieldset>
+  <label>What would you like help with (check all that apply)?</label><br/>
+
+  <input type="checkbox" id="Quote/pricing" name="system" value="Quote/pricing">
+  <label for="Quote/pricing">Custom quote or pricing</label><br/>
+
+  <input type="checkbox" id="Availability" name="system" value="Availability">
+  <label for="Availability">Details about availability/scheduling</label><br/>
+
+  <input type="checkbox" id="Browsing" name="system" value="Browsing">
+  <label for="Browsing">Just browsing – gathering info for now</label><br/>
+
+  <input type="checkbox" id="other" name="system" value="other">
+  <label for="other">Other</label><br/>
+
+  <label><br>Leave message below for "other:"</label>
+  <textarea name="other_message" rows="4" cols="75"></textarea>
+</fieldset>
+
+        <fieldset>
+            <label for="time">When do you need Angelina Savaiano to see this?</label>
+            <select id="time" name="time">
+            <option value="asap">ASAP</option>
+            <option value="week">this week</option>
+            <option value="month">this month</option>
+            <option value="whenever">whenever</option>
+            </select>
+        </fieldset>           
+    <input type="submit" value="Send">
+</form>
+</main>
+<footer>
+    <h2>Note</h2>
+    <p>Thank you for taking the time to reach out! There might've been more emails sent before yours, but Angelina Savaiano will respond as soon as she can! </p>
+</footer>
+</div>
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  	const submitBtn = document.querySelector('input[type="submit"]');
+
+	submitBtn.addEventListener("click", function (e) {
+    	const burstContainer = document.createElement("div");
+    	burstContainer.style.position = "absolute";
+    	burstContainer.style.left = e.pageX + "px";
+    	burstContainer.style.top = e.pageY + "px";
+    	burstContainer.style.pointerEvents = "none";
+    	document.body.appendChild(burstContainer);
+
+    for (let i = 0; i < 20; i++) {
+      const star = document.createElement("div");
+      star.style.position = "absolute";
+      star.style.width = "6px";
+      star.style.height = "6px";
+      star.style.borderRadius = "50%";
+      star.style.background = "white";
+      star.style.boxShadow = "0 0 6px #3D85FF";
+      star.style.left = "0px";
+      star.style.top = "0px";
+
+      const angle = Math.random() * 2 * Math.PI;
+      const distance = Math.random() * 80;
+      const x = Math.cos(angle) * distance;
+      const y = Math.sin(angle) * distance;
+
+      star.animate([
+        { transform: "translate(0, 0)", opacity: 1 },
+        { transform: `translate(${x}px, ${y}px)`, opacity: 0 }
+      ], {
+        duration: 600,
+        easing: "ease-out"
+      });
+
+      burstContainer.appendChild(star);
+    }
+		setTimeout(() => burstContainer.remove(), 700);
+  });
+});
+</script>
+</body>
+</html>

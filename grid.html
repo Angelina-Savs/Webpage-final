@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photos of Space</title>
+<style>
+    @font-face {
+		font-family: raleway;
+		src: url('Raleway.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: bebasneue;
+		src: url('bebasneue.ttf') format('truetype');
+	} * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: whitesmoke;
+    } #page {
+   		width: 928px;
+    	height: auto;
+  		background-image: 
+        radial-gradient(black, black, black, black, black, black, midnightblue, white, black),
+        url("aimage3.jpg");
+    	background-size: cover;       /* makes image fill container */
+    	background-blend-mode: multiply; /* blends gradient with image */
+    	box-shadow: 2px 3px 6px gray;
+    	margin: 0 auto;
+}  main {
+        width: 768px;
+        height: 768px;
+        margin: 36px auto;
+		margin-top: 60px;
+        display: grid;
+        grid-gap: 1px;
+        grid-template: repeat(3,256px) / repeat(2,384px);
+    } header h1 {
+        font: 48pt/1.4em bebasneue;
+        text-align: center;
+		color: white;
+        text-shadow: 0px 0px 30px blue;
+		padding-top: 50px;
+    } h2 {
+        font: 15pt/1.4em raleway;
+        text-align: center;
+		color: white;
+        text-shadow: 0px 0px 30px blue;
+		padding-top: 12px;
+		width: 768px;
+		margin: 0px auto;
+    } h3 {
+        font: 13pt/1.4em raleway;
+        text-align: center;
+		color: white;
+        text-shadow: 0px 0px 30px blue;
+		padding-top: 12px;
+		width: 768px;
+		margin: 0px auto;
+		padding-bottom: 20px;
+    }main img {
+        width: 384px;
+		height: 256px;
+    	object-fit: cover;
+    } main img:nth-child(1) {
+        grid-area: 1/1/2/2;
+    } main img:nth-child(2) {
+        grid-area: 2/1/3/2;
+    } main img:nth-child(3) {
+        grid-area: 3/1/4/2;
+    } main img:nth-child(4) {
+        display: block;
+		object-fit: contain;
+		height: auto;
+		width: 100%;
+		grid-area: 1/2/2/4;
+    } main img:nth-child(5) {
+        grid-area: 3/2/4/2;
+    } #page {
+  position: relative; 
+} button {
+  font-family: 'raleway', sans-serif;
+  font-size: 12pt;
+  color: white;
+  background: linear-gradient(midnightblue, royalblue);
+  border: 1px solid dodgerblue;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px dodgerblue;
+  box-shadow: 0 0 10px midnightblue;
+  transition: all 0.3s ease;
+
+  position: absolute;  
+  top: 23px;           
+  left: 20px;        
+  z-index: 10;          
+}
+
+button:hover {
+  background: linear-gradient(royalblue, midnightblue);
+  color: lightcyan;
+  box-shadow: 0 0 18px dodgerblue;
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+    <div id="page">
+		<button onclick="window.location.href='index.html';">
+ Go Back to About Page
+</button>
+        <header>
+           <h1>Photos of Space</h1>
+        </header>
+		<h2> Explore the silent beauty of the cosmos through vivid images of stars, galaxies, and nebulae. Each photo captures a moment of wonder from the universe beyond.</h2>
+        <main>
+            <img src="gimage1.jpg" />
+            <img src="gimage2.jpg" />
+            <img src="gimage3.jpg" />
+            <img src="gimage4.jpg" />
+			<img src="gimage5.jpg" />
+        </main>
+        <footer>
+            <h3><em>Pictures provided by Unsplash</em></h3>
+        </footer>
+		</div>
+</body>
+</html>

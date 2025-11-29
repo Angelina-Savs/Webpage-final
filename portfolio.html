@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+	@font-face {
+		font-family: bebasneue;
+		src: url('bebasneue.ttf') format('truetype');
+	} @font-face {
+		font-family: raleway;
+		src: url('Raleway.ttf') format('truetype');
+	} body {
+		margin: 0;
+    	padding: 0;
+    } #page {
+        width: 968px;
+        height: 1224px;
+        margin: 0 auto;
+        background: #0A0225;
+        border: 4px solid black;
+		color: black;
+		display: block;
+		max-width: 968px;
+   		width: 100%;
+   		margin: 0 auto;
+		overflow: hidden;
+    } ul {
+	 	display: flex;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		height: 50px;
+  		background: royalblue;
+  		padding: 0;
+  		margin: 0;
+		width: 100%;
+	} li {
+  		flex: 1;
+  		height: 100%;
+  		background: black;
+  		text-align: center;
+  		list-style: none;
+  		font: 14pt/2.5em raleway;
+	} li a {
+ 		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		height: 100%;
+  		width: 100%;
+  		background: black;
+  		color: white;
+  		font: 14pt raleway;
+  		text-decoration: none;
+	}#textbox {
+        width: 928px;
+        height: 867px;
+        margin: 0 auto;
+		background: #000000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+		margin-top: 60px;
+		padding-top: 60px;
+		box-shadow: 0px 0px 200px blue;
+    } img {
+        width: 200px;
+        height: 200px;
+        border: 5px ridge midnightblue;
+        box-shadow: 0px 0px 60px midnightblue;
+        background: url("image1.JPEG");
+        background-size: 100%;
+        background-position: center;
+        transition: transform 0.67s;
+   } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.67s;
+
+    } h1 {
+        font: 26pt/1.0em bebasneue;
+        text-shadow: 1px 1px 15px blue;
+        text-align: center;
+        padding-top: 6px;
+		margin-top: 50px;
+		margin-bottom: 5px;
+		color: white;
+    } h2 {
+        font: 85pt/1.0em bebasneue;
+		text-shadow: 1px 1px 15px blue;
+        text-align: center;
+        padding-top: 6px;
+		margin-top: 0px;
+		color: white;
+		margin-bottom: 30px;
+    } figure {
+        width: 200px;
+    } figcaption {
+        margin-top: 6px;
+        font: 12pt/1.4em raleway;
+		src: url('Raleway.ttf') format('truetype');
+		color: white;
+    } p {
+        margin-top: 0;
+        font: 14pt/1.4em raleway;
+		src: url('Raleway.ttf') format('truetype');
+        width: 500px;
+		color: white;
+    } #page {
+  position: relative; 
+} button {
+  font-family: 'raleway', sans-serif;
+  font-size: 12pt;
+  color: white;
+  background: linear-gradient(midnightblue, royalblue);
+  border: 1px solid dodgerblue;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-shadow: 1px 1px 6px dodgerblue;
+  box-shadow: 0 0 10px midnightblue;
+  transition: all 0.3s ease;
+
+  position: absolute;  
+  top: 65px;           
+  left: 20px;        
+  z-index: 10;          
+}
+
+button:hover {
+  background: linear-gradient(royalblue, midnightblue);
+  color: lightcyan;
+  box-shadow: 0 0 18px dodgerblue;
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>	
+<div id="page">
+	<ul>
+		<li><a href="portfolio.html">Home</a></li>
+		<li><a href="table.html">Artwork Information</a></li>
+	</ul>
+	<button onclick="window.location.href='index.html';">
+ Go Back to About Page
+</button>
+<h1> Angelina Savaiano's </h1>
+<h2> ART Portfolio </h2>
+    <div id="textbox">
+ 	 <figure>
+  		<a href="image1.JPEG">
+   		 <img src="thumb-image1.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+	   <figcaption> <strong><em>Screen Depression</em> (2023). Gouache on paper.&nbsp;</strong></figcaption>
+ 		<figcaption>A traditional painting exploring themes of digital isolation. </figcaption>
+     </figure>
+	 <figure>
+  		<a href="image2.JPEG">
+   		 <img src="thumb-image2.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+	   <figcaption> <strong><em>Bob Marley Moon</em> (2025). Acrylic on a drum.</strong>&nbsp;</figcaption>
+ 		 <figcaption>Commissioned painting for "Bob Marley Hope Road" show at Mandalay Bay. </figcaption>
+     </figure>
+	 <figure>
+  		<a href="image3.JPEG">
+   		 <img src="thumb-image3.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+	  <figcaption> <strong><em>Like Him?</em> (2024). Digital painting.&nbsp;</strong></figcaption>
+ 		 <figcaption>A painting of Angelina’s characters on a drawing app called Procreate. </figcaption>
+	</figure>
+	 <figure>
+  		<a href="image4.JPEG">
+   		 <img src="thumb-image4.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+ 		<figcaption> <strong><em>Online Obsession</em> (2023). Gouache on paper.&nbsp;</strong></figcaption>
+ 		 <figcaption>A traditional painting exploring themes of social media/phone addictions.</figcaption>
+	</figure>
+	 <figure>
+  		<a href="image5.JPEG">
+	    <img src="thumb-image5.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+ 		 <figcaption> <strong><em>Oreo</em> (2024). Acrylic markers on paper.&nbsp;</strong></figcaption>
+ 		 <figcaption>A painting of a dog named Oreo that Angelina would see here and there.&nbsp; &nbsp; </figcaption>
+	</figure>
+	 <figure>
+  		<a href="image6.PNG">
+   		 <img src="thumb-image6.jpg" alt="Thumbnail of Screen Depression painting"/>
+  		</a>
+ 		<figcaption> <strong><em>Angelina Savaiano</em> (2024). Digital illustration.&nbsp;</strong></figcaption>
+ 		 <figcaption>A self-portrait of Angelina Savaiano. Created in Adobe Illustrator. </figcaption>
+	</figure>
+  </div>
+</div>
+</body>
+</html>

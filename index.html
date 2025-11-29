@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+	@font-face {
+		font-family: bebasneue;
+		src: url('bebasneue.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: raleway;
+		src: url('Raleway.ttf') format('truetype');
+	}
+	body {
+		margin: 0;
+    	padding: 0;
+    }
+	#page {
+        width: 968px;
+        height: 1224px;
+        margin: 0 auto;
+        border: 4px solid black;
+		color: black;
+		display: block;
+		max-width: 968px;
+   		width: 100%;
+   		margin: 0 auto;
+		overflow: hidden;
+		background-image: 
+        radial-gradient(black, black, black, black, black, black, midnightblue, white, black),
+        url("aimage3.jpg");
+    	background-size: cover;
+    	background-blend-mode: multiply;
+		position: relative;
+    }
+	h1 {
+        font: 26pt/1.0em bebasneue;
+        text-shadow: 1px 1px 15px blue;
+        text-align: center;
+        padding-top: 6px;
+		margin-top: 50px;
+		margin-bottom: 5px;
+		color: white;
+    }
+	h2 {
+        font: 85pt/1.0em bebasneue;
+		text-shadow: 1px 1px 15px blue;
+        text-align: center;
+        padding-top: 6px;
+		margin-top: 0px;
+		color: white;
+		margin-bottom: 30px;
+    }
+	h3 {
+        font: 15pt/1.4em raleway;
+        text-align: left;
+		color: white;
+        text-shadow: 0px 0px 30px blue;
+		padding-top: 12px;
+		width: 768px;
+		margin: 0px auto;
+	}
+	p {
+        margin-top: 0;
+        font: 14pt/1.4em raleway;
+		src: url('Raleway.ttf') format('truetype');
+        width: 500px;
+		color: white;
+    }
+
+	/* Vertical button container */
+	.button-container {
+		position: absolute;
+		bottom: 60px;       /* sits near bottom of page */
+		left: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column; /* stack vertically */
+		align-items: center;    /* center horizontally */
+		padding: 0 40px;        /* spacing from edges */
+		box-sizing: border-box;
+	}
+
+	/* Full-width glowing buttons */
+	.button-container a {
+		width: 90%;              /* fills most of page width */
+		margin: 30px 0;          /* spacing between buttons */
+		padding: 20px;
+		text-align: center;
+		font-family: 'raleway', sans-serif;
+		font-size: 18pt;
+		color: white;
+		background: linear-gradient(midnightblue, royalblue);
+		border: 2px solid dodgerblue;
+		border-radius: 12px;
+		text-decoration: none;
+		text-shadow: 1px 1px 8px dodgerblue;
+		box-shadow: 0 0 15px midnightblue;
+		transition: all 0.3s ease;
+	}
+
+	.button-container a:hover {
+		background: linear-gradient(royalblue, midnightblue);
+		color: lightcyan;
+		box-shadow: 0 0 25px dodgerblue;
+		transform: scale(1.02);
+	}
+</style>
+</head>
+
+<body>	
+<div id="page">
+	<h1> Angelina Savaiano's </h1>
+	<h2> Website Portfolio </h2>
+    <h3>
+		<p4>
+			In Fall 2025, Angelina Savaiano completed "GRC 365: Web and User Interface Design" at UNLV, where she was introduced to website development using HTML and CSS for the first time. Although the course presented significant challenges, she persevered and successfully acquired a valuable new skill that strengthens her pursuit of a Bachelor’s degree in Graphic Design and Media. Presented below are highlights from Savaiano’s HTML assignments, showcasing the work she is most proud of from this course.
+		</p4>
+	</h3>
+
+	<!-- Vertical Portfolio Buttons -->
+	<div class="button-container">
+		<a href="first.html">Stargazing at Night Page</a>
+		<a href="portfolio.html">Angelina Savaiano's Art Portfolio Page</a>
+		<a href="grid.html">Photos of Space</a>
+		<a href="contact.html">Contact Page</a>
+		<a href="animation.html">Animation Page</a>
+	</div>
+</div>
+</body>
+</html>
